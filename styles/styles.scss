@@ -1,0 +1,320 @@
+@import "./variables";
+@import "./header";
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.logo{
+    max-width: 200px;
+    min-width: 100px;
+    img{
+        width: 100%;
+    }
+}
+.hero-section{
+    @include flexCenter;
+    padding: 2rem 0 2rem;
+
+}
+
+.hero-text {
+    margin-left: 6rem;
+    h2{
+        font-size: 21px;
+        font-weight: 400;
+        color: $secondaryBtn;
+        padding-top: 3rem;
+        &::after{
+            content: " ";
+            display: block;
+            margin-top: 0.1rem;
+            width: 95px;
+            height: 5px;
+            background: $primaryBtn;
+        }
+    }
+    h1{
+        color: $secondaryBtn;
+        padding-top: 1.5rem;
+    }
+    .link-btn{
+        .service{
+            background: $primaryBtn;
+            border: none;
+            padding: 0.8rem;
+            color: white;
+            border-radius: 5px 5px 5px;
+            margin-right: 1rem;
+
+        }
+        .contact{
+            background: #fff;
+            border: 3px solid $primaryBtn;
+            padding: 0.6rem;
+            color:$secondaryBtn;
+            border-radius: 5px 5px 5px;
+        }
+    }
+    
+}
+
+.nurse-photo{
+    max-width: 850px;
+    min-width: 100px;
+    img{
+        width: 100%;
+    }
+}
+
+.blue-background{
+    background: $subColor;
+    text-align: center;
+    padding: 5rem 0 5rem;
+    margin-top: -2rem;
+    p{
+        width: 500px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+    }
+    span{
+        color: #000000;
+        font-weight: bolder;
+    }
+    
+}
+
+.services{
+    text-align: center;
+    margin-top: 3rem;
+    h5{
+        width: 500px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+    span{
+        color: $secondaryBtn;
+    }
+}
+
+.cards{
+      @include flexAround;
+      margin: 4rem auto;
+      .first-card,.second-card,.third-card{
+          max-width: 300px;
+          min-width: 50px;
+          border: 4px solid #C4C4C4;
+          padding-top: 1rem;
+        //   font-family: ;
+      }
+}
+.morebtn{
+    border: none;
+    background: $primaryBtn;
+    padding: 0.7rem 2rem 0.7rem;
+    border-radius: 5px 5px 5px;
+    color: white;
+}
+.consultants{
+    background: #B3B3FF;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 3rem 0 3rem;
+    h3{
+        color: #000000;
+        font-weight: bolder;
+        padding-bottom: 2rem;
+    }
+}
+
+.flex-items{
+    @include flexAround;
+    .anita,.james{
+        background: #FFFFFF;
+        padding: 2rem 1rem 1rem;
+        h4{
+            color: $secondaryBtn;
+        }
+        figcaption{
+            .justify{
+                text-align: justify;
+            }
+        }
+    }
+}
+.lines{
+    padding-top: 2rem;
+}
+
+.book-now{
+    background: $primaryBtn;
+    border: none;
+    padding: 0.4rem;
+    color: white;
+    border-radius: 5px 5px 5px;
+    margin: 0 0.8rem;
+}
+.call{
+    background: #fff;
+    border: 1px solid $primaryBtn;
+    padding: 0.3rem;
+    color:$primaryBtn;
+    border-radius: 5px 5px 5px;
+}
+
+.dark,.blue{
+    width: 2rem;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5rem auto;
+    display: inline-block;
+    
+}
+.dark{ background: #000000;}
+.blue{background: #000080;}
+
+.contact-us{
+    text-align: center;
+    margin-top: 2rem;
+    h3{
+        color: #000000;
+        font-weight: bold;
+    }
+    span{
+        color: $secondaryBtn;
+    }
+
+    form{
+        max-width: 500px;
+        min-width: 100px;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        input{
+            background: rgba(196, 196, 196, 0.65);
+        }
+    }
+    input[type=textarea]{
+        width: 500px;
+        padding: 1rem 0 12rem 1rem;
+        border: 6px solid rgba(0, 0, 0, 0.56);
+        margin: 1rem auto;
+
+    }
+    .email{
+        @include flexbetween;
+    }
+    input[type=text]{
+        width: 50%;
+        text-align: center;
+        padding: 0.5rem 0;
+        border: 6px solid rgba(0, 0, 0, 0.56);
+        margin: 0 auto;
+        &:nth-child(2){
+            margin-left: 3rem;
+        }
+    }
+    button{
+        float: right;
+        background: $primaryBtn;
+        color: #FFFFFF;
+        padding: 8px 34px;
+        border-radius: 5px 5px 5px;
+        border: none;
+    }
+}
+
+footer{
+    background: #00002B;
+    margin-top: 6rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    .contact{
+        @include flexAround;
+        border-bottom: 1.0281px solid #FFFFFF;
+        margin: 0 7rem;
+        padding: 3rem 0;
+        h5{
+            color: #FFFFFF;
+        }
+        .phone-img{
+            img{
+                margin: 0 3rem;
+                background: #FFFFFF;
+                padding: 13px;
+                border-radius: 50%;
+            }
+        }
+        .message-img{
+                background: #FFFFFF;
+                margin: 0 4rem;
+                padding: 15px;
+                border-radius: 50%;
+        }
+        .loc-img{
+            img{
+            background: #FFFFFF;
+            padding: 16px;
+            margin: 0 10rem;
+            border-radius: 50%;
+            }            
+        }
+
+    }
+}
+
+
+.footer-links{
+    @include flexAround;
+    margin-top: 4rem;
+    color: #FFFFFF;
+    ul{
+        list-style-type: none;
+        li{
+            margin-left: -2rem;
+        }
+    
+    }
+}
+
+.news-letter{
+
+    input{
+        padding: 10px;
+        border: none;
+        border-radius: 5px 5px 5px;
+    }
+    button{
+        padding: 8px 7px;
+        background: $primaryBtn;
+        color: #FFFFFF;
+        border: none;
+        margin-left: 1rem;
+        border-radius: 5px 5px 5px;
+    }
+    .flex-socials{
+        img{
+            width: 1.3rem
+        }
+        @include flexbetween;
+        .social-links{
+            img{
+            width: 2rem;
+            &:nth-child(2){
+                width: 1rem;
+                margin: 0 1.5rem;
+            }
+            }
+            
+        }
+    }
+}
