@@ -336,6 +336,7 @@ body {
 footer {
   background: #00002B;
   margin-top: 6rem;
+  padding-bottom: 2rem;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -353,6 +354,7 @@ footer .contact {
 
 footer .contact h5 {
   color: #FFFFFF;
+  margin-top: 1rem;
 }
 
 footer .contact .phone-img img {
@@ -364,7 +366,7 @@ footer .contact .phone-img img {
 
 footer .contact .message-img {
   background: #FFFFFF;
-  margin: 0 4rem;
+  margin: 0 3rem;
   padding: 15px;
   border-radius: 50%;
 }
