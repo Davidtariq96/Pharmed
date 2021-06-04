@@ -53,6 +53,11 @@ body{
             color: white;
             border-radius: 5px 5px 5px;
             margin-right: 1rem;
+            transition: transform 1.1s;
+            &:hover{
+                background: rgb(84, 128, 40);
+                transform: scale(1.1);
+            }
 
         }
         .contact{
@@ -61,6 +66,10 @@ body{
             padding: 0.6rem;
             color:$secondaryBtn;
             border-radius: 5px 5px 5px;
+            transition: transform 1.1s;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
     }
     

@@ -122,6 +122,16 @@ body {
   color: white;
   border-radius: 5px 5px 5px;
   margin-right: 1rem;
+  -webkit-transition: -webkit-transform 1.1s;
+  transition: -webkit-transform 1.1s;
+  transition: transform 1.1s;
+  transition: transform 1.1s, -webkit-transform 1.1s;
+}
+
+.hero-text .link-btn .service:hover {
+  background: #548028;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .hero-text .link-btn .contact {
@@ -130,6 +140,15 @@ body {
   padding: 0.6rem;
   color: #000080;
   border-radius: 5px 5px 5px;
+  -webkit-transition: -webkit-transform 1.1s;
+  transition: -webkit-transform 1.1s;
+  transition: transform 1.1s;
+  transition: transform 1.1s, -webkit-transform 1.1s;
+}
+
+.hero-text .link-btn .contact:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .nurse-photo {
