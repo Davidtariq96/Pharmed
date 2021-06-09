@@ -168,7 +168,8 @@ body {
 }
 
 .blue-background p {
-  width: 500px;
+  max-width: 500px;
+  min-width: 100px;
   margin: 0 auto;
   font-size: 1.2rem;
   margin-top: 2.5rem;
@@ -185,7 +186,8 @@ body {
 }
 
 .services h5 {
-  width: 500px;
+  max-width: 500px;
+  min-width: 100px;
   margin: 0 auto;
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -316,7 +318,7 @@ body {
 }
 
 .contact-us input[type=textarea] {
-  width: 500px;
+  width: 100%;
   padding: 1rem 0 12rem 1rem;
   border: 6px solid rgba(0, 0, 0, 0.56);
   margin: 1rem auto;
@@ -383,16 +385,16 @@ footer .contact .phone-img img {
   border-radius: 50%;
 }
 
-footer .contact .message-img {
+footer .contact .message-img img {
   background: #FFFFFF;
   margin: 0 3rem;
-  padding: 15px;
+  padding: 16px;
   border-radius: 50%;
 }
 
 footer .contact .loc-img img {
   background: #FFFFFF;
-  padding: 16px;
+  padding: 18px;
   margin: 0 10rem;
   border-radius: 50%;
 }
@@ -450,5 +452,48 @@ footer .contact .loc-img img {
 .news-letter .flex-socials .social-links img:nth-child(2) {
   width: 1rem;
   margin: 0 1.5rem;
+}
+
+@media (max-width: 480px) {
+  nav ul li, .search-btn, .user {
+    display: none;
+  }
+  nav .menu-icon {
+    display: block;
+    margin-top: 0.6rem;
+  }
+  .hero-section, .cards, .flex-items, .contact, .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .link-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 1rem;
+  }
+  .nurse-photo {
+    margin-top: 1rem;
+  }
+  .blue-background p {
+    margin: 0 0.4rem;
+  }
+  .cards .first-card, .cards .second-card, .cards .third-card {
+    margin: 0 auto;
+  }
+  footer .contact {
+    margin: 0 1rem;
+  }
+  footer .contact .loc-img img {
+    margin: 0 3rem;
+  }
+  .footer-links {
+    margin: 2rem 1rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

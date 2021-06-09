@@ -1,3 +1,4 @@
+
 @import "./variables";
 @import "./header";
 
@@ -89,7 +90,8 @@ body{
     padding: 5rem 0 5rem;
     margin-top: -2rem;
     p{
-        width: 500px;
+        max-width: 500px;
+        min-width: 100px;
         margin: 0 auto;
         font-size: 1.2rem;
         margin-top: 2.5rem;
@@ -105,7 +107,8 @@ body{
     text-align: center;
     margin-top: 3rem;
     h5{
-        width: 500px;
+        max-width: 500px;
+        min-width: 100px;
         margin: 0 auto;
         font-size: 1.2rem;
         margin-top: 1rem;
@@ -213,7 +216,7 @@ body{
         }
     }
     input[type=textarea]{
-        width: 500px;
+        width: 100%;
         padding: 1rem 0 12rem 1rem;
         border: 6px solid rgba(0, 0, 0, 0.56);
         margin: 1rem auto;
@@ -266,15 +269,17 @@ footer{
             }
         }
         .message-img{
+                img{
                 background: #FFFFFF;
                 margin: 0 3rem;
-                padding: 15px;
+                padding: 16px;
                 border-radius: 50%;
+                }
         }
         .loc-img{
             img{
             background: #FFFFFF;
-            padding: 16px;
+            padding: 18px;
             margin: 0 10rem;
             border-radius: 50%;
             }            
@@ -328,4 +333,71 @@ footer{
             
         }
     }
+}
+
+// // Medium screens
+
+// @media screen and(max-width:967px){}
+// // Ipads and Tablets
+@media (max-width:768px){}
+// // Mobile Devices
+@media(max-width:480px){
+    nav ul li,.search-btn,.user{
+        display: none;
+    }
+   nav {
+       .menu-icon{
+        display: block;
+        margin-top: 0.6rem;
+    }
+        }
+    .hero-section,.cards,.flex-items,.contact,.footer-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .link-btn{
+        display: flex;
+        margin-top: 1rem;
+    }
+    .nurse-photo{
+        margin-top: 1rem;
+    }
+    .blue-background{
+        p{
+            margin: 0 0.4rem;
+        }      
+    }
+
+    .cards{
+        .first-card,.second-card,.third-card{
+            margin: 0 auto;
+        }
+    }
+
+    footer .contact{
+        margin: 0 1rem;
+        // .message-img{
+        //     img{
+        //         background: red;
+        //         margin: 1rem 0;
+        //         padding: 10px;
+        //         border-radius: 50%;
+        //     }
+        // }
+    }
+    footer .contact .loc-img img {
+        margin: 0 3rem;
+    }
+    .footer-links{
+        margin: 2rem 1rem;
+    }
+
+//     footer .contact .loc-img img {
+//         margin: 0 3rem;
+//     }
+    
+    
+   
+    
+// }
 }
